@@ -1,0 +1,46 @@
+$mainColor: #1c1b2c;
+
+body {
+  margin: 0;
+}
+
+#root {
+  background-image: url('/images/background.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+  height: 100%;
+}
+
+.main-container {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+}
+
+a, p, span, h1, h2, h3 {
+  color: $mainColor;
+  text-decoration: none;
+}
+
+.loader {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+    width: 200px;
+    height: auto;
+  }
+}
+
+
+@import './pages/UsersList/styles.scss';
+@import './pages/UsersInfo/styles.scss';
+@import './pages/RepoListView/styles.scss';

@@ -1,0 +1,15 @@
+.user-info {
+    display: flex;
+    margin-top: 50px;
+    .user-logo {
+        max-width: 300px;
+        img {
+            width: 100%;
+        }
+    }
+    .user-info-block {
+        display: flex;
+        flex-direction: column;
+        padding-left: 50px;
+    }
+}
